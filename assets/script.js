@@ -12,7 +12,6 @@ function applyBorder(){
 
     values = verifyValues(values)
     const equal = verifyEquals(values)
-    console.log(equal)
     
     if(equal){
         editable_box.style.borderRadius = border_tl.value + 'px'
@@ -32,9 +31,10 @@ border-bottom-left-radius: ${border_bl.value}px;`
 }
 
 function verifyValues(array){
+    console.log(array)
     for( let i = 0; i < array.length; i++){
         if(array[i].value == '' || array[i].value < 0){
-            array[i.value = '0']
+            array[i].value = '0'
         }
         else if(array[i].value > 120){
             array[i].value = '120'
