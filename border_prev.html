@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Previewer</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Border Previewer</h1>
+            <p><small>by Mateus Aquino</small></p>
+        </div>
+
+        <div id="container">
+            <div class="inputs-top">
+                <input type="number" class="border-input" id="t-left" value="0" min="0" max="100">
+                <input type="number" class="border-input" id="t-right" value="0" min="0" max="100">
+            </div>
+
+            <div id="editable-box">
+                <textarea name="css" id="css-generator" rows="10" readonly>Max border radius: 120;
+Values above this will be converted to 120.
+                </textarea>
+            </div>
+
+            <div class="inputs-bottom">
+                <input type="number" class="border-input" id="b-left" value="0" min="0" max="100">
+                <button type="button" onclick="applyBorder()">Preview!</button>
+                <input type="number" class="border-input" id="b-right" value="0" min="0" max="100">
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

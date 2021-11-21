@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;    
+}
+
+body{
+    background-color: #58555A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+main{
+    width: 458px;
+    max-width: calc(100vw - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: calc(100vh - 75px);
+}
+#editable-box{
+    display: flex;
+    background-color: #7F7F7F;
+    justify-content: center;
+    align-items: center;    
+    padding: 40px;
+    margin:  5px auto;
+    border:  1px solid black;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);    
+}
+#css-generator{
+    width: 250px;
+    max-width: calc(100vw - 122px);
+    max-height: calc(50vh - 80px);
+    resize: none;
+    padding: 15px;
+    border-radius: 5px;    
+}
+h1, p{
+    display: block;
+    color: #FBF37C;   
+    text-align: center;
+    margin: 0;
+}
+p{
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.border-input{
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 30%;
+}
+.inputs-top,
+.inputs-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    background-color: #FBF37C;
+    padding: 3px;
+    border-radius: 1em;
+    border: 1px solid black;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #e6de75;
+    font-weight: bold;
+    padding: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@media (max-height: 360px) {
+    *{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
