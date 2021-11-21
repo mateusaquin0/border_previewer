@@ -10,7 +10,7 @@ function applyBorder(){
                     border_br,
                     border_bl]
 
-    values = verifyMax(values)
+    values = verifyValues(values)
     const equal = verifyEquals(values)
     console.log(equal)
     
@@ -31,11 +31,13 @@ border-bottom-right-radius: ${border_br.value}px;
 border-bottom-left-radius: ${border_bl.value}px;`
 }
 
-function verifyMax(array){
+function verifyValues(array){
     for( let i = 0; i < array.length; i++){
-        if(array[i].value > 120){
+        if(array[i].value == '' || array[i].value < 0){
+            array[i.value = '0']
+        }
+        else if(array[i].value > 120){
             array[i].value = '120'
-            console.log(array[i].value)
         }
     }
     return array
