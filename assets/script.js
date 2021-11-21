@@ -31,7 +31,6 @@ border-bottom-left-radius: ${border_bl.value}px;`
 }
 
 function verifyValues(array){
-    console.log(array)
     for( let i = 0; i < array.length; i++){
         if(array[i].value == '' || array[i].value < 0){
             array[i].value = '0'
